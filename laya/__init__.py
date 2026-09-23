@@ -11,6 +11,7 @@ from .common import (
     td_lambda_targets,
 )
 from .email import clean_email_body, email_state
+from .korean import DecisionEngine, KoreanDecisionEngine
 from .lang import analyse as detect_language
 from .lang import detect_script, is_english
 from .presets import (
@@ -31,6 +32,8 @@ __all__ = [
     "Router",
     "RouteDecision",
     "DEFAULT_MODELS",
+    "DecisionEngine",
+    "KoreanDecisionEngine",
     "shortlist_choice",
     "predict_shortlist",
     "embed_fn_from_agent",
